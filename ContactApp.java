@@ -57,6 +57,7 @@ public class ContactApp {
         String phone = input.nextLine();
 
         boolean found = false;
+        while (!found) {
 
         for (int index = 0; index < contacts.size(); index++) {
 
@@ -74,6 +75,9 @@ public class ContactApp {
 
         if (!found) {
            System.out.println("Contact not found.");
+           System.out.print("Enter a valid phone Number: ");
+           phone = input.nextLine();
+           }
         }
 
              break;
@@ -84,6 +88,7 @@ public class ContactApp {
         String phoneNumberSearch = input.nextLine();
 
             boolean phoneNumberFound = false;
+            while (!phoneNumberFound) {
 
         for (int index = 0; index < contacts.size(); index++) {
 
@@ -101,6 +106,10 @@ public class ContactApp {
 
         if (!phoneNumberFound) {
             System.out.println("Contact not found.");
+            System.out.print("Enter valid contact: ");
+            phoneNumberSearch = input.nextLine();
+              }
+           
          }
 
           break;
@@ -112,6 +121,7 @@ public class ContactApp {
         String firstNameSearch = input.nextLine();
 
            boolean firstNameFound = false;
+           while (!firstNameFound) {
 
         for (int index = 0; index < contacts.size(); index++) {
 
@@ -129,6 +139,9 @@ public class ContactApp {
 
         if (!firstNameFound) {
             System.out.println("Contact not found.");
+            System.out.print("Enter valid Name: ");
+            firstNameSearch = input.nextLine();
+               }
              }
 
             break;
@@ -139,6 +152,7 @@ public class ContactApp {
         String lastNameSearch = input.nextLine();
 
          boolean lastNameFound = false;
+         while (!lastNameFound) {
 
         for (int index = 0; index < contacts.size(); index++) {
 
@@ -156,6 +170,9 @@ public class ContactApp {
 
       if (!lastNameFound) {
           System.out.println("Contact not found.");
+          System.out.print("Enter valid Last Name: ");
+           lastNameSearch = input.nextLine();
+             }
           }
 
            break;
@@ -166,6 +183,7 @@ public class ContactApp {
         String phoneNumberEdit = input.nextLine();
 
         boolean phoneNumberEditFound = false;
+        while (!phoneNumberEditFound) {
 
         for (int index = 0; index < contacts.size(); index++) {
 
@@ -190,6 +208,9 @@ public class ContactApp {
 
         if (!phoneNumberEditFound) {
         System.out.println("Contact not found.");
+        System.out.print("Enter Valid Number: ");
+        phoneNumberEdit = input.nextLine();
+          }
        }
 
         break;
